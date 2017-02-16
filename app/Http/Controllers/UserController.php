@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\User;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -9,7 +10,8 @@ use App\Http\Requests;
 class UserController extends Controller
 {
     public function getSignup() {
-        return view('user.signup')
+        return view('user.signup');
+         //return view('shop.index', ['products' => $products]);
     }
     
     public function postSignup(Request $request) {
